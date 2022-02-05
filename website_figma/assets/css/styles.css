@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.header__item {
+    margin-right: 40px;
+}
+
+.header__item svg {
+    padding-bottom: 3px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.header__btn {
+    width: 120px;
+    height: 46px;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__link:hover, .header__link:focus,
+.header__btn:hover, .header__btn:focus {
+    opacity: .6;
+}
+
+.hero {
+    min-height: 582px;
+    background: url(../images/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 205px;
+}
+
+.hero__title {
+    font-size: 71px;
+    line-height: 78px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hero__subtitle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero__btn {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 60px;
+    background: #5AB963;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero__btn:hover, .hero__btn:focus {
+    background: #326537;
+    transition: all 0.4s ease;
+}
