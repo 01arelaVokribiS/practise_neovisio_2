@@ -258,7 +258,7 @@ img {
 .fourth-block__wrapper {
     min-height: 168px;
     max-width: 761px;
-    margin: 115px auto 0;
+    margin: 115px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,6 +513,16 @@ img {
     }
 }
 
+@media screen and (max-width: 1105px) {
+    .promotion-block__cards {
+        justify-content: center;
+    }
+
+    .promotion-block__card {
+        margin-bottom: 15px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .wrapper {
         max-width: 960px;
@@ -526,16 +536,32 @@ img {
         justify-content: center;
     }
 
-    .promotion-block__card {
-        margin-bottom: 15px;
-    }
-
     .promotion-block__card:first-child {
         margin-right: 30px;
     }
 
+    .fourth-block {
+        min-height: 320px;
+    }
+
     .fourth-block__wrapper {
         margin: 75px auto;
+    }
+
+    .dishes {
+        min-height: 960px;
+    }
+
+    .dishes__dish {
+        margin-bottom: 30px;
+    }
+
+    .dishes__dish:nth-child(even) {
+        margin-bottom: 80px;
+    }
+
+    .party-on-block {
+        min-height: 360px;
     }
 
     .party-on-block__wrapper {
@@ -555,10 +581,6 @@ img {
     .hero__title {
         font-size: 56px;
         line-height: 62px;
-    }
-
-    .promotion-block__header {
-        margin: 0 auto;
     }
 
     .fourth-block {
@@ -650,6 +672,15 @@ img {
         right: 15px;
     }
 
+    .hero__title {
+        font-size: 54px;
+        line-height: 63px;
+    }
+
+    .hero__subtitle {
+        margin-bottom: 30px;
+    }
+
     .promotion-block__card {
         width: 70%;
         margin-right: 0;
@@ -683,6 +714,41 @@ img {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .promotion-block__card {
+        width: 100%;
+    }
+
+    .fourth-block__wrapper {
+        margin: 115px 20px;
+    }
+
+    .fourth-block__description {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .dish__title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .item__text {  
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .footer__menu {
+        width: 100%;
+    }
+
+    .footer__item {
+        margin-bottom: 15px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .header__menu {
         width: 100%;
@@ -690,5 +756,9 @@ img {
 
     .header__list {
         margin-top: 20px;
+    }
+
+    .footer__list {
+        margin-right: 10px;
     }
 }
